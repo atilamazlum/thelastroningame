@@ -1,106 +1,114 @@
+# ADVENTURE GAME - Mono'nun Oykusu
 
-THE LAST RONIN
-The Last Ronin is a story-driven text adventure (RPG) developed using the Java Swing library. Players take on the role of a young man named Mono, embarking on a perilous journey to save his family and village from an ancient curse.
+Metin tabanli bir macera oyunu. Java Swing ile yazildi.
 
-Synopsis
-The village of Shiba is decaying under a dark plague. Crops wither, and malevolent spirits haunt the living. Mono must travel to the fortified city of Cantra to find a legendary mage capable of breaking the spell. Along the way, he must face moral dilemmas, dangerous foes, and the hidden truths of his own lineage.
+Shiba koyunde bir lanet yayilmistir. Ekinler soluyor, cocuklar daha dogmadan oluyor, her aksam evlerin onunden karanlik siluetler geciyor. Kucuk yasta babasini kaybeden Mono, kardesinin iblisler yuzunden komaya girmesiyle bu laneti kirmak icin tek basina Cantra sehrindeki kaleye yola cikar.
 
-Key Features
-Branching Narrative: Story progression and dialogues that adapt based on player choices.
+Yolculugu tehlikelerle doludur. Ruhlar pesini birakmaz, karanlik her kosede pusuya yatmistir. Ama Mono'nun tasidigi kilic ve kolundaki gizemli dovme, siradan bir koylü cocugu olmadiginin isaretleridir.
 
-Dynamic Visual Themes: Background environments that shift according to the current location (Forest, Castle, Town, Battle).
-
-Advanced UI Components:
-
-Typewriter Effect: Animated text rendering for a more immersive storytelling experience.
-
-HUD System: Real-time tracking of HP, currency, and equipped weaponry.
-
-Custom Styled Buttons: Themed selection buttons designed to match the game's aesthetic.
-
-Economy and Inventory: Mechanics for trading with merchants, upgrading equipment, and earning gold through tavern mini-games.
-
-Combat System: A luck-based combat engine where different weapons (Knife, Long Sword, Excalibur) provide unique damage ranges.
-
-Technical Requirements
-Language: Java
-
-GUI Framework: Java Swing & AWT
-
-Minimum Java Version: JDK 8 or higher
-
-Installation and Execution
-Download the project files to your local machine.
-
-Open a terminal or command prompt in the project directory.
-
-How to Run
-
-Clone the repository
-Open in your IDE (IntelliJ / Eclipse / VSCode)
-Run Game.ja
+Lanetli ormanlardan gececek, dusmanlarla savasacak, ittifaklar kuracak ve ailesinin karanlik sirlarini kesfedeceksin.
 
 
-Planned Enhancements & Roadmap
-1. Advanced Turn-Based Combat System
+## Ozellikler
 
-Attribute Scaling: Implementation of Strength, Agility, and Intelligence stats that influence hit chance and damage output.
+- Hikaye odakli oynanis: Secimleriniz hikayeyi farkli yonlere goturur
+- Savas sistemi: Farkli silahlara gore degisen hasar degerleri
+- Ekonomi sistemi: Para kazanma, harcama, kumar ve rusvet mekanikleri
+- Dukkan: Zirhlar ve silahlar satin alinabilir
+- Karakter gelisimi: HP, silah ve para yonetimi
+- Atmosferik arayuz: Gradient arka planlar, hover efektli butonlar, HP bari, typewriter efekti
 
-Skill Tree: A progression system allowing players to unlock special abilities such as Parry, Counter-Attack, or Spirit Slash.
+## Gereksinimler
 
-Status Effects: Introduction of debuffs like bleeding, poison, or stun during encounters.
+- Java 8 veya ustu
+- JDK (Java Development Kit)
 
-2. Dynamic Inventory & Loot System
 
-Rarity Tiers: Items categorized by rarity (Common, Rare, Epic, Legendary) with randomized stat rolls.
+## Kurulum ve Calistirma
 
-Consumables: A dedicated inventory management for healing potions and temporary buffs.
+1. Tum .java dosyalarini ayni klasore koyun
+2. images/ klasorunu ayni yere olusturun (gorsel eklemek isterseniz)
+3. Terminal veya komut satirindan:
 
-Crafting: A system to combine gathered materials to forge unique gear.
+```
+javac *.java
+java Game
+```
 
-3. Enhanced Audio Integration
 
-Positional Sound Effects: Ambient sounds that change based on the current scene.
+## Dosya Yapisi
 
-Dynamic Soundtrack: Background music that shifts intensity during combat or high-stakes moments.
+```
+adventure-game/
+  Game.java              
+  PlayerState.java       
+  BackgroundPanel.java   
+  StyledButton.java      
+  HPBar.java           
+  TypewriterTextArea.java  
+  images/               
+    castle.png          
+    forest.gif          
+    ...
+```
 
-4. Save & Load Architecture
 
-Serialization: Ability to save player progress, inventory, and story flags to a local file.
 
-Multiple Save Slots: Support for different playthroughs and decision paths.
+Sahne adlari:
+- intro: Giris sahnesi
+- road: Yol sahnesi
+- castle: Kale sahnesi
+- forest: Orman sahnesi
+- battle: Savas sahnesi
+- crossroad: Yol ayirimi
+- river: Nehir sahnesi
+- bar: Bar sahnesi
+- shop: Dukkan sahnesi
+- town: Kasaba sahnesi
+- cemetery: Mezarlik sahnesi
+- win: Zafer sahnesi
+- lose: Olum sahnesi
 
-5. Expanded World Map
+## Silahlar
 
-Interactive Navigation: A visual map interface to travel between discovered locations.
+| Silah | Hasar | Nerden |
+|-------|-------|--------|
+| Knife | 0-5 | Baslangic silahi |
+| Long Sword | 0-15 | Ormanda bulunur |
+| Excalibur | 30-45 | Tuccardan 400$ |
+| Dagger of Death Flowers | 70-100 | Tuccardan 1000$ |
 
-Random Encounters: Procedural events that occur while traveling to increase replayability.
 
-Developer Note
-This project is designed to demonstrate Object-Oriented Programming (OOP) principles and the capabilities of the Java Swing framework. The narrative is currently in an ongoing state, providing a foundation for additional regions, quests, and mechanics.
+## Ekran Goruntuleri
 
-In-Game Screenshots
-Below are some screenshots showcasing different parts of the game:
+<p align="center">
+  <img src="Ekran görüntüsü 2026-04-19 163707.png" width="700"/>
+</p>
 
-Title Screen
-A dark and atmospheric welcome to the world of The Last Ronin.
+<p align="center">
+  <img src="Ekran görüntüsü 2026-04-19 163736.png" width="700"/>
+</p>
 
-<img src="screenshot1.png" alt="The Last Ronin Title Screen" width="600">
+<p align="center">
+  <img src="Ekran görüntüsü 2026-04-19 163826.png" width="700"/>
+</p>
 
-Exploring the Town
-Mono interacting with NPCs and exploring the detailed pixel art environment.
+<p align="center">
+  <img src="Ekran görüntüsü 2026-04-19 163842.png" width="700"/>
+</p>
 
-<img src="screenshot2.png" alt="Mono in the Town" width="600">
+<p align="center">
+  <img src="Ekran görüntüsü 2026-04-19 163854.png" width="700"/>
+</p>
 
-Battle Encounter
-A look at the turn-based combat system in action against a dangerous foe.
+<p align="center">
+  <img src="Ekran görüntüsü 2026-04-19 163912.png" width="700"/>
+</p>
 
-<img src="screenshot3.png" alt="Combat Scene" width="600">
+<p align="center">
+  <img src="Ekran görüntüsü 2026-04-19 163922.png" width="700"/>
+</p>
 
-(Not for final output - Visualizing the scene descriptions):
+## Lisans
 
-Title Screen Image Description: A dark, moody, fantasy-themed title screen. Large, ornate text reads "THE LAST RONIN" in a classic fantasy font. Below the title, a stylized katana sword graphic is shown with light shining on it. The background is a dimly lit, ancient-looking wooden sign or wall with moss and scratches, giving a sense of history. There's a single, large "START GAME" button made of aged metal and wood.
-
-Town Image Description: A bustling, pixel-art style Japanese fantasy town during the day. Small wooden houses with tiled roofs line the streets. Mono, a lone figure in dark samurai-style clothing with a katana, is walking towards a merchant's stall with colorful banners. In the distance, a large, well-defended castle can be seen on a hill.
-
-Combat Image Description: A turn-based battle scene on a dusty road. Mono stands on the left side of the screen, facing a snarling, wolf-like demon monster on the right. Both characters have dynamic battle stances. Above them, small health bars are visible. The battle interface at the bottom shows menu options like "Attack," "Defend," "Items," and "Run" in a simple, pixelated font.
+Bu proje kişisel bir projedir ve ticari kullanım için açık değildir. Tüm hakları Mazlum Atila'ya aittir.
