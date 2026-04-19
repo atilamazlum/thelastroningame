@@ -1,116 +1,106 @@
-# 🗡 ADVENTURE GAME
 
-A dark fantasy, choice-based Java Swing adventure game.
+THE LAST RONIN
+The Last Ronin is a story-driven text adventure (RPG) developed using the Java Swing library. Players take on the role of a young man named Mono, embarking on a perilous journey to save his family and village from an ancient curse.
 
----
+Synopsis
+The village of Shiba is decaying under a dark plague. Crops wither, and malevolent spirits haunt the living. Mono must travel to the fortified city of Cantra to find a legendary mage capable of breaking the spell. Along the way, he must face moral dilemmas, dangerous foes, and the hidden truths of his own lineage.
 
-## 📜 Story
+Key Features
+Branching Narrative: Story progression and dialogues that adapt based on player choices.
 
-### 🌑 The Curse of Shiba Village
+Dynamic Visual Themes: Background environments that shift according to the current location (Forest, Castle, Town, Battle).
 
-Centuries ago, a terrible curse fell upon **Shiba Village**.
+Advanced UI Components:
 
-Crops withered.  
-Children were born dead — or not whole.  
-At night, shadows passed in front of homes and whispers filled the air.
+Typewriter Effect: Animated text rendering for a more immersive storytelling experience.
 
-Desperate, the villagers visited a regional sorcerer.  
-He revealed a terrifying truth:
+HUD System: Real-time tracking of HP, currency, and equipped weaponry.
 
-> The curse was beyond even his power.
+Custom Styled Buttons: Themed selection buttons designed to match the game's aesthetic.
 
-Only one person could break it —  
-A mysterious figure living inside the great castle of **Cantra City**.
+Economy and Inventory: Mechanics for trading with merchants, upgrading equipment, and earning gold through tavern mini-games.
 
----
+Combat System: A luck-based combat engine where different weapons (Knife, Long Sword, Excalibur) provide unique damage ranges.
 
-### 🧒 The Journey of Mono Yamaguchi
+Technical Requirements
+Language: Java
 
-Our protagonist, **Mono Yamaguchi**, lost his father at a young age.  
-He lives in poverty with his mother and younger sister.
+GUI Framework: Java Swing & AWT
 
-When his sister falls into a coma because of demonic forces, Mono makes a decision:
+Minimum Java Version: JDK 8 or higher
 
-> He will find the one who can break the curse.
+Installation and Execution
+Download the project files to your local machine.
 
-Before leaving, his mother gives him:
-- A sword from his father  
-- A mysterious scroll  
-- A pendant  
+Open a terminal or command prompt in the project directory.
 
-Mono begins his journey alone.
+How to Run
 
----
+Clone the repository
+Open in your IDE (IntelliJ / Eclipse / VSCode)
+Run Game.ja
 
-### 🩸 Blood on the Road
 
-On his way to the city, Mono is haunted by spirits.  
-He witnesses innocent people possessed and is forced to kill to survive.
+Planned Enhancements & Roadmap
+1. Advanced Turn-Based Combat System
 
-This is his first blood.
+Attribute Scaling: Implementation of Strength, Agility, and Intelligence stats that influence hit chance and damage output.
 
-And his innocence dies with it.
+Skill Tree: A progression system allowing players to unlock special abilities such as Parry, Counter-Attack, or Spirit Slash.
 
----
+Status Effects: Introduction of debuffs like bleeding, poison, or stun during encounters.
 
-### 🏰 The Castle & The Deal
+2. Dynamic Inventory & Loot System
 
-At the castle gate, a knight refuses to let him enter.
+Rarity Tiers: Items categorized by rarity (Common, Rare, Epic, Legendary) with randomized stat rolls.
 
-But offers a deal:
+Consumables: A dedicated inventory management for healing potions and temporary buffs.
 
-> Bring me the legendary **Hermes Herb** from the cursed western forest.
+Crafting: A system to combine gathered materials to forge unique gear.
 
-Mono accepts.
+3. Enhanced Audio Integration
 
----
+Positional Sound Effects: Ambient sounds that change based on the current scene.
 
-### ⚔ Gameplay Elements
+Dynamic Soundtrack: Background music that shifts intensity during combat or high-stakes moments.
 
-- 🗡 Turn-based combat system
-- 💰 Money & shop system
-- 🛡 Weapons and armor upgrades
-- 🎲 Mini card game
-- 🏰 Multiple story branches
-- 👁 Hidden political rebellion storyline
-- 🔮 Mystery about Mono’s true identity
+4. Save & Load Architecture
 
-Every decision affects your path.
+Serialization: Ability to save player progress, inventory, and story flags to a local file.
 
----
+Multiple Save Slots: Support for different playthroughs and decision paths.
 
-## 🎮 Features
+5. Expanded World Map
 
-- Java Swing GUI
-- Interactive choice system
-- Combat damage calculations
-- HP & Money tracking
-- Branching story design
-- Randomized battle outcomes
+Interactive Navigation: A visual map interface to travel between discovered locations.
 
----
+Random Encounters: Procedural events that occur while traveling to increase replayability.
 
-## 🧩 Themes
+Developer Note
+This project is designed to demonstrate Object-Oriented Programming (OOP) principles and the capabilities of the Java Swing framework. The narrative is currently in an ongoing state, providing a foundation for additional regions, quests, and mechanics.
 
-- Dark Fantasy
-- Moral Conflict
-- Psychological Struggle
-- Hidden Identity
-- Political Rebellion
+In-Game Screenshots
+Below are some screenshots showcasing different parts of the game:
 
----
+Title Screen
+A dark and atmospheric welcome to the world of The Last Ronin.
 
-## 🚀 How to Run
+<img src="screenshot1.png" alt="The Last Ronin Title Screen" width="600">
 
-1. Clone the repository
-2. Open in your IDE (IntelliJ / Eclipse / VSCode)
-3. Run `Game.java`
+Exploring the Town
+Mono interacting with NPCs and exploring the detailed pixel art environment.
 
----
+<img src="screenshot2.png" alt="Mono in the Town" width="600">
 
-## ✨ Final Line
+Battle Encounter
+A look at the turn-based combat system in action against a dangerous foe.
 
-> This is not just an adventure.  
-> It is a journey through a curse.
+<img src="screenshot3.png" alt="Combat Scene" width="600">
 
----
+(Not for final output - Visualizing the scene descriptions):
+
+Title Screen Image Description: A dark, moody, fantasy-themed title screen. Large, ornate text reads "THE LAST RONIN" in a classic fantasy font. Below the title, a stylized katana sword graphic is shown with light shining on it. The background is a dimly lit, ancient-looking wooden sign or wall with moss and scratches, giving a sense of history. There's a single, large "START GAME" button made of aged metal and wood.
+
+Town Image Description: A bustling, pixel-art style Japanese fantasy town during the day. Small wooden houses with tiled roofs line the streets. Mono, a lone figure in dark samurai-style clothing with a katana, is walking towards a merchant's stall with colorful banners. In the distance, a large, well-defended castle can be seen on a hill.
+
+Combat Image Description: A turn-based battle scene on a dusty road. Mono stands on the left side of the screen, facing a snarling, wolf-like demon monster on the right. Both characters have dynamic battle stances. Above them, small health bars are visible. The battle interface at the bottom shows menu options like "Attack," "Defend," "Items," and "Run" in a simple, pixelated font.
