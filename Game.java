@@ -124,10 +124,6 @@ public class Game {
         bgPanel.repaint();
     }
 
-    // ==================== MENU SCREENS ====================
-    // BUNLARI showTitleScreen()'in HEMEN ALTINA EKLE
-
-
 
 
     private void showCredits() {
@@ -206,7 +202,6 @@ public class Game {
 
 
 
-    // ==================== GAME SCREEN SETUP ====================
     private void startGame() {
         bgPanel.removeAll();
         player.reset();
@@ -286,7 +281,6 @@ public class Game {
         girisekrani();
     }
 
-    // ==================== UI HELPERS ====================
     private JLabel makeLabel(String text, int size) {
         JLabel l = new JLabel(text);
         l.setForeground(new Color(220, 200, 170));
@@ -317,7 +311,7 @@ public class Game {
         if (weaponLabel != null) weaponLabel.setText(player.weapon);
     }
 
-    // ==================== CHOICE HANDLER ====================
+
     private void handleChoice(String ch) {
         mainText.skipAnimation(); // skip if still animating
 
@@ -492,15 +486,9 @@ public class Game {
         }
     }
 
-    // ==================== SCENES ====================
-
-    // --- INTRO ---
     void girisekrani() {
 
 
-
-
-        // kendi resmini ekle
         ImageIcon img = new ImageIcon("images/castle.jpg");
         Image scaled = img.getImage().getScaledInstance(700, 180, Image.SCALE_SMOOTH);
         JLabel resimLabel = new JLabel(new ImageIcon(scaled));
@@ -974,7 +962,6 @@ public class Game {
             BackgroundPanel.THEME_CEMETERY, "", "", "", "");
     }
 
-    // ==================== DARK SCROLLBAR UI ====================
     static class DarkScrollBarUI extends javax.swing.plaf.basic.BasicScrollBarUI {
         @Override
         protected void configureScrollBarColors() {
